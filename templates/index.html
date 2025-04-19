@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Downloader 🔻</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <button id="themeToggle">🌞</button>
+    <h1>🔻 YouTube Downloader</h1>
+  </header>
+
+  <main>
+    <form id="downloadForm">
+      <input type="text" name="url" placeholder="Paste YouTube link here 🔗" required />
+      <select name="format">
+        <option value="video">🎬 Video</option>
+        <option value="audio">🎵 Audio Only</option>
+      </select>
+      <button type="submit">Download</button>
+    </form>
+
+    <div id="progressWrapper" style="display: none;">
+      <div class="progress-container">
+        <div id="bar" class="progress-bar"></div>
+        <div id="percent" class="progress-text">0%</div>
+      </div>
+    </div>
+
+    <div id="thumbnail"></div>
+    <div id="result"></div>
+
+    <section id="history">
+      <h3>📜 Download History</h3>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    Made with ❤️ by Ahmad Farooq | In collaboration with OpenAI 🤝
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
